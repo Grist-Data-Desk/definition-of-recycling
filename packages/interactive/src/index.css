@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GT Super";
+  font-weight: 300;
+  src: url("https://grist.org/wp-content/themes/grist/dist/fonts/GT-Super-Text-Book..woff2")
+    format("woff2");
+}
+
+@layer utilities {
+  #lenis-content.full-bleed {
+    @apply mr-0 w-screen max-w-none;
+    margin-left: calc(50% - 50vw);
+  }
+}

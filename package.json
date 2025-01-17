@@ -1,21 +1,14 @@
 {
-  "name": "@grist/definition-of-recycling",
+  "name": "@grist/definition-of-recycling-monorepo",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
+  "packageManager": "pnpm@9.15.4",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.16",
-    "typescript": "~5.6.2",
-    "vite": "^6.0.1"
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10"
   },
-  "dependencies": {
-    "motion": "^11.13.1"
+  "scripts": {
+    "format": "prettier --write ."
   }
 }
