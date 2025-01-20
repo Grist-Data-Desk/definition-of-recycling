@@ -22,7 +22,9 @@ async function main(): Promise<void> {
   });
 
   const webps = (
-    await fs.readdir(path.resolve(__dirname, "../assets"), { recursive: true })
+    await fs.readdir(path.resolve(__dirname, "../../interactive/public"), {
+      recursive: true,
+    })
   ).filter((file) => path.extname(file) === ".webp");
 
   for (const file of webps) {
