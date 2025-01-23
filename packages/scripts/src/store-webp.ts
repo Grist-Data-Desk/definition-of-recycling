@@ -31,7 +31,7 @@ async function main(): Promise<void> {
     console.log(`Uploading ${file}`);
 
     const Body = await fs.readFile(
-      path.resolve(__dirname, `../assets/${file}`),
+      path.resolve(__dirname, `../../interactive/public/${file}`),
     );
     const putObjectCommand = new PutObjectCommand({
       Bucket: "grist",
