@@ -111,9 +111,9 @@ function updateAnnotation(annotation: HTMLSpanElement, progress: number) {
  * and set up the Lenis scroll event handler.
  */
 function main() {
-  const canvas = document.getElementById("lenis-canvas") as HTMLCanvasElement;
+  const canvas = document.getElementById("scrolly-canvas") as HTMLCanvasElement;
   const annotation = document.getElementById(
-    "lenis-annotation",
+    "scrolly-annotation",
   ) as HTMLSpanElement;
 
   const ctx = canvas.getContext("2d");
@@ -137,18 +137,18 @@ function main() {
   preloadImages(path, frameCount);
 
   document.addEventListener("DOMContentLoaded", () => {
-    new SmoothScroll((e) => {
+    new SmoothScroll((progress) => {
       if (!ctx) {
         return;
       }
 
       const frameIndex = Math.min(
         frameCount - 1,
-        Math.floor(e.progress * frameCount),
+        Math.floor(progress * frameCount),
       );
 
       updateImage(img, path, frameIndex);
-      updateAnnotation(annotation, e.progress);
+      updateAnnotation(annotation, progress);
     });
   });
 }

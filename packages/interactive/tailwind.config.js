@@ -3,13 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        serif: "'GT Super', serif",
+      colors: {
+        smog: "#f0f0f0",
+        earth: "#3c3830",
       },
-      fontSize: {
-        annotation: ["20px", "32px"],
+      fontFamily: {
+        sans: "'Basis Grotesque', sans-serif",
       },
     },
   },
+  corePlugins: {
+    preflight: false,
+  },
   plugins: [],
+  // important: "#scrolly-content",
 };

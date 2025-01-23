@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
-    <div class="full-bleed relative h-[1000vh]" id="lenis-content">
-      <canvas class="sticky top-0 h-dvh w-full object-cover" id="lenis-canvas">
-      </canvas>
-      <span
-        class="text-annotation fixed left-[20px] top-[80px] max-w-[300px] text-balance font-serif font-light text-white md:top-[100px] lg:left-[80px] lg:max-w-[400px]"
-        id="lenis-annotation"
+    <div id="scrolly-content">
+      <div class="top-with-appeal-bar sticky z-10 border">
+        <span
+          class="annotation absolute left-1/2 top-8 w-[80%] -translate-x-1/2 border-2 border-double p-4 font-sans font-light text-white backdrop-blur md:max-w-[400px]"
+          id="scrolly-annotation"
+        >
+          The conventional recycling process degrades the microscopic fibers
+          that make up plastic bottles.
+        </span>
+      </div>
+      <canvas
+        class="h-screen-with-appeal-bar top-with-appeal-bar sticky w-full object-cover"
+        id="scrolly-canvas"
       >
-        The conventional recycling process degrades the microscopic fibers that
-        make up plastic bottles.
-      </span>
+      </canvas>
     </div>
+    <cite id="scrolly-credit">Jesse Nichols and Parker Ziegler / Grist</cite>
     <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
