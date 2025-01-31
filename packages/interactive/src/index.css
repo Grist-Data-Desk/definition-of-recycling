@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply relative;
+}
+
 #scrolly-content {
-  @apply relative mr-0 mt-[36px] h-[1000dvh] w-screen max-w-none md:mt-[60px];
+  @apply relative mr-0 mt-[36px] h-[1000lvh] w-screen max-w-none md:mt-[60px];
 
   margin-left: calc(50% - 50vw);
 }
@@ -41,14 +45,14 @@
   }
 
   .h-screen-with-appeal-bar {
-    height: calc(100dvh - 47px);
+    height: calc(100lvh - 47px);
 
     @screen md {
-      height: calc(100dvh - 57px);
+      height: calc(100lvh - 57px);
     }
 
     @screen lg {
-      height: calc(100dvh - 66px);
+      height: calc(100lvh - 66px);
     }
   }
 }

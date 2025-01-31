@@ -1,5 +1,6 @@
-import "lenis/dist/lenis.css";
 import { scaleLinear, scaleThreshold } from "d3-scale";
+
+import "lenis/dist/lenis.css";
 
 import { SmoothScroll } from "./SmoothScroll";
 
@@ -87,9 +88,9 @@ const annotationTextScale = scaleThreshold<number, string>()
   ]);
 const annotationOpacityScale = scaleLinear()
   .domain([
-    0, 0.225, 0.25, 0.275, 0.475, 0.5, 0.525, 0.725, 0.75, 0.775, 0.975, 1,
+    0, 0.15, 0.2, 0.275, 0.35, 0.475, 0.5, 0.525, 0.725, 0.75, 0.775, 0.975, 1,
   ])
-  .range([1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0]);
+  .range([1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0]);
 
 /**
  * Update the annotation text and opacity based on the progress of the scroll.

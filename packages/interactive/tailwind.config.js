@@ -16,5 +16,4 @@ export default {
     preflight: false,
   },
   plugins: [],
-  // important: "#scrolly-content",
 };
