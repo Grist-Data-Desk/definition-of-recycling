@@ -84,7 +84,7 @@ const annotationTextScale = scaleThreshold<number, string>()
     "The conventional recycling process degrades the microscopic fibers that make up plastic bottles.",
     "Because of this, bottles are often turned into products that don't require high-quality plastic fibers, like polyester for carpets, jackets, or shoes.",
     "These polyester threads can be mixed with glues, dyes, and fibers like cotton or elastic, degrading the plastic's purity even further.",
-    "This makes the shoes difficult to recycle, so most end up in a landfill.",
+    "This makes the shoes difficult to recycle, so most end up being discarded.",
   ]);
 const annotationOpacityScale = scaleLinear()
   .domain([
